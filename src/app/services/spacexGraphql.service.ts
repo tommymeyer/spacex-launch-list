@@ -1334,7 +1334,7 @@ export type PastLaunchesDetailsQuery = (
     & Pick<Launch, 'id' | 'mission_name' | 'details'>
     & { links?: Maybe<(
       { __typename?: 'LaunchLinks' }
-      & Pick<LaunchLinks, 'flickr_images' | 'mission_patch'>
+      & Pick<LaunchLinks, 'flickr_images' | 'mission_patch' | 'video_link'>
     )> }
   )> }
 );
@@ -1368,6 +1368,7 @@ export const PastLaunchesDetailsDocument = gql`
     links {
       flickr_images
       mission_patch
+      video_link
     }
   }
 }
