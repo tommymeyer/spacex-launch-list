@@ -11,7 +11,7 @@
       />
       <mat-card-content>
         <p>{{ launchDetails.details }}</p>
-        <p>{{ launchDetails.video_link }}</p>
+        <a [href]="launchDetails.links.video_link" target="_blank">{{launchDetails.mission_name}} Launch Video</a>
       </mat-card-content>
     </mat-card>
   </section>
